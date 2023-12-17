@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@a-type/ui": "^0.5.1",
+    "@a-type/ui": "^0.5.2",
     "@react-spring/web": "^9.7.3",
     "@verdant-web/react-router": "^0.5.4",
     "@where/verdant": "workspace:*",
