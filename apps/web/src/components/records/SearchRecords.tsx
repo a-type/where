@@ -11,7 +11,7 @@ export function SearchRecords({ searchTerm }: SearchRecordsProps) {
   const [records, { hasMore, loadMore }] = hooks.useAllRecordsInfinite({
     index: {
       where: 'nameSearch',
-      startsWith: searchTerm,
+      startsWith: searchTerm.toLowerCase(),
     },
     key: 'search',
     pageSize: 10,
