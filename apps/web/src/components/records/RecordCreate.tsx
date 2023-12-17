@@ -43,6 +43,7 @@ export function RecordCreate({}: RecordCreateProps) {
     <div className="flex flex-col gap-3 w-full">
       <H3>Where?</H3>
       <CameraRoot
+        facingMode="environment"
         onCapture={capturePhoto}
         className={classNames(
           'w-full transition-all',
@@ -115,6 +116,7 @@ function PhotosPreview({ record }: { record: Record }) {
 }
 
 function PhotoPreview({ photo }: { photo: EntityFile }) {
+  hooks.useWatch(photo);
   return (
     <Dialog>
       <DialogTrigger className="rounded-md overflow-hidden w-[25vmin] h-[25vmin] border-none bg-transparent p-0 animate-zoom-in animate-duration-100">

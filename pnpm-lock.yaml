@@ -15,8 +15,8 @@ importers:
   apps/web:
     dependencies:
       '@a-type/ui':
-        specifier: ^0.5.0
-        version: 0.5.0(@types/react-dom@18.2.18)(@types/react@18.2.45)
+        specifier: ^0.5.1
+        version: 0.5.1(@types/react-dom@18.2.18)(@types/react@18.2.45)
       '@react-spring/web':
         specifier: ^9.7.3
         version: 9.7.3(react-dom@18.2.0)(react@18.2.0)
@@ -115,8 +115,8 @@ importers:
 
 packages:
 
-  /@a-type/ui@0.5.0(@types/react-dom@18.2.18)(@types/react@18.2.45):
-    resolution: {integrity: sha512-icQPeJsgSVYTY2fORWEuc6DB3A849zGwcICv7cVcUS5iD7MEhUhX1Ub7OXXGcdcpz8PLZGpVW6hpABfpsBt1RA==}
+  /@a-type/ui@0.5.1(@types/react-dom@18.2.18)(@types/react@18.2.45):
+    resolution: {integrity: sha512-qiHGDLTMjm/KmbrmUaiclO4+Si3FNRU83HukzA7dZ2jnri/fFFYV8mFyzS9nozkm/cigetsGhHIWIQ9qgZpVEQ==}
     dependencies:
       '@a-type/utils': 1.0.5
       '@radix-ui/react-accordion': 1.1.2(@types/react-dom@18.2.18)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
