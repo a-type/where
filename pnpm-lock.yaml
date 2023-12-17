@@ -15,8 +15,8 @@ importers:
   apps/web:
     dependencies:
       '@a-type/ui':
-        specifier: ^0.4.9
-        version: 0.4.9(@types/react-dom@18.2.18)(@types/react@18.2.45)
+        specifier: ^0.5.0
+        version: 0.5.0(@types/react-dom@18.2.18)(@types/react@18.2.45)
       '@react-spring/web':
         specifier: ^9.7.3
         version: 9.7.3(react-dom@18.2.0)(react@18.2.0)
@@ -105,11 +105,18 @@ importers:
       react:
         specifier: ^18.2.0
         version: 18.2.0
+      stopword:
+        specifier: ^2.0.8
+        version: 2.0.8
+    devDependencies:
+      '@types/stopword':
+        specifier: ^2.0.3
+        version: 2.0.3
 
 packages:
 
-  /@a-type/ui@0.4.9(@types/react-dom@18.2.18)(@types/react@18.2.45):
-    resolution: {integrity: sha512-gRVwlGSf8xvLiGKObVWz51FW8nrOEO848sc+mhndWowifIVIcev7/m95pwDtQNr1sIHRzYuZDs3vDlaQtcOA5g==}
+  /@a-type/ui@0.5.0(@types/react-dom@18.2.18)(@types/react@18.2.45):
+    resolution: {integrity: sha512-icQPeJsgSVYTY2fORWEuc6DB3A849zGwcICv7cVcUS5iD7MEhUhX1Ub7OXXGcdcpz8PLZGpVW6hpABfpsBt1RA==}
     dependencies:
       '@a-type/utils': 1.0.5
       '@radix-ui/react-accordion': 1.1.2(@types/react-dom@18.2.18)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
@@ -3684,6 +3691,10 @@ packages:
   /@types/scheduler@0.16.8:
     resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
 
+  /@types/stopword@2.0.3:
+    resolution: {integrity: sha512-hioMj0lOvISM+EDevf7ijG8EMbU+J3pj4SstCyfQC1t39uPYpAe7beSfBdU6c1d9jeECTQQtR3UJWtVoUO8Weg==}
+    dev: true
+
   /@types/throttle-debounce@2.1.0:
     resolution: {integrity: sha512-5eQEtSCoESnh2FsiLTxE121IiE60hnMqcb435fShf4bpLRjEu1Eoekht23y6zXS9Ts3l+Szu3TARnTsA0GkOkQ==}
     dev: false
@@ -6301,6 +6312,10 @@ packages:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
+
+  /stopword@2.0.8:
+    resolution: {integrity: sha512-btlEC2vEuhCuvshz99hSGsY8GzaP5qzDPQm56j6rR/R38p8xdsOXgU5a6tIgvU/4hcCta1Vlo/2FVXA9m0f8XA==}
+    dev: false
 
   /string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}

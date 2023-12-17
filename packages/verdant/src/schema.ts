@@ -1,5 +1,6 @@
 import { collection, schema } from '@verdant-web/store';
 import cuid from 'cuid';
+import { fullTextIndex } from './fullTextIndex.js';
 
 /**
  * Welcome to your Verdant schema!
@@ -48,6 +49,15 @@ const records = collection({
       items: {
         type: 'file',
       },
+    },
+  },
+  indexes: {
+    createdAt: {
+      field: 'createdAt',
+    },
+    nameSearch: {
+      type: 'string[]',
+      compute: (r) => fullTextIndex(r.name),
     },
   },
 });

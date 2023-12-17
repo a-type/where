@@ -104,4 +104,40 @@ export type RecordPhotosSnapshot = string[];
 
 /** Index filters for Record **/
 
-export type RecordFilter = never;
+export interface RecordCreatedAtMatchFilter {
+  where: "createdAt";
+  equals: number;
+  order?: "asc" | "desc";
+}
+export interface RecordCreatedAtRangeFilter {
+  where: "createdAt";
+  gte?: number;
+  gt?: number;
+  lte?: number;
+  lt?: number;
+  order?: "asc" | "desc";
+}
+export interface RecordNameSearchMatchFilter {
+  where: "nameSearch";
+  equals: string;
+  order?: "asc" | "desc";
+}
+export interface RecordNameSearchRangeFilter {
+  where: "nameSearch";
+  gte?: string;
+  gt?: string;
+  lte?: string;
+  lt?: string;
+  order?: "asc" | "desc";
+}
+export interface RecordNameSearchStartsWithFilter {
+  where: "nameSearch";
+  startsWith: string;
+  order?: "asc" | "desc";
+}
+export type RecordFilter =
+  | RecordCreatedAtMatchFilter
+  | RecordCreatedAtRangeFilter
+  | RecordNameSearchMatchFilter
+  | RecordNameSearchRangeFilter
+  | RecordNameSearchStartsWithFilter;

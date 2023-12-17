@@ -3,6 +3,13 @@
 // src/schema.ts
 import { collection, schema } from "@verdant-web/store";
 import cuid from "cuid";
+
+// src/fullTextIndex.ts
+function fullTextIndex(str) {
+  return str.split(/\s+/).map((s) => s.toLowerCase());
+}
+
+// src/schema.ts
 var records = collection({
   name: "record",
   primaryKey: "id",
@@ -32,6 +39,15 @@ var records = collection({
       items: {
         type: "file"
       }
+    }
+  },
+  indexes: {
+    createdAt: {
+      field: "createdAt"
+    },
+    nameSearch: {
+      type: "string[]",
+      compute: (r) => fullTextIndex(r.name)
     }
   }
 });

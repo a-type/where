@@ -17,6 +17,10 @@
 		"@verdant-web/common": "^1.16.1",
 		"@verdant-web/react": "^24.0.1",
 		"@verdant-web/store": "^2.8.4",
-		"cuid": "^2.1.8"
+		"cuid": "^2.1.8",
+		"stopword": "^2.0.8"
+	},
+	"devDependencies": {
+		"@types/stopword": "^2.0.3"
 	}
 }
