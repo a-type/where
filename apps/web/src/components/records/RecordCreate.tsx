@@ -30,7 +30,8 @@ export function RecordCreate({}: RecordCreateProps) {
 
   const capturePhoto = async (data: File) => {
     if (editingRecord) {
-      editingRecord.get('photos').push(data);
+      // TODO: fix multiple photos
+      // editingRecord.get('photos').push(data);
     } else {
       const record = await client.records.put({
         photos: [data],
