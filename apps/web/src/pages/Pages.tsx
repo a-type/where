@@ -30,7 +30,6 @@ export function Pages() {
         <Outlet />
         <TopLoader />
       </Router>
-      <Navigation />
     </PageRoot>
   );
 }

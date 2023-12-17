@@ -10,8 +10,10 @@
 	},
 	"dependencies": {
 		"@a-type/ui": "^0.4.9",
+		"@react-spring/web": "^9.7.3",
 		"@verdant-web/react-router": "^0.5.4",
 		"@where/verdant": "workspace:*",
+		"classnames": "^2.3.2",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-lazy-with-preload": "^2.2.1",

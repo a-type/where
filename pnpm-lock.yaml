@@ -17,12 +17,18 @@ importers:
       '@a-type/ui':
         specifier: ^0.4.9
         version: 0.4.9(@types/react-dom@18.2.18)(@types/react@18.2.45)
+      '@react-spring/web':
+        specifier: ^9.7.3
+        version: 9.7.3(react-dom@18.2.0)(react@18.2.0)
       '@verdant-web/react-router':
         specifier: ^0.5.4
         version: 0.5.4(react@18.2.0)
       '@where/verdant':
         specifier: workspace:*
         version: link:../../packages/verdant
+      classnames:
+        specifier: ^2.3.2
+        version: 2.3.2
       react:
         specifier: ^18.2.0
         version: 18.2.0
